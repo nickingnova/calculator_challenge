@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body id="toggle-one"class="body-toggle">
+  <main class="calculator__container">
+    <section class="calculator__themes">
+      <h1 class="calculator__title">calc</h1>
+      <div class="calculator__toggle">
+        <h3 class="calculator__text">THEME</h3>
+        <div class="calculator__toggle-container">
+          <h3 class="calculator__numbers-toggle">1 2 3</h3>
+          <div class="calculator__toggle-tip" onclick="themeChange()"><div class="tip send"></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="calculator__screen">
+      <input type="text" name="screen" id="display" class="calculator__screen-display" placeholder="0" >
+    </section>
+    <section class="calculator__keypad">
+      <button class="calculator__key" onclick="set('7')">7</button>
+      <button class="calculator__key" onclick="set('8')">8</button>
+      <button class="calculator__key" onclick="set('9')">9</button>
+      <button class="calculator__key erase" onclick="eraseLast()">DEL</button>
+      <button class="calculator__key" onclick="set('4')">4</button>
+      <button class="calculator__key" onclick="set('5')">5</button>
+      <button class="calculator__key" onclick="set('6')">6</button>
+      <button class="calculator__key" onclick="set('+')">+</button>
+      <button class="calculator__key" onclick="set('1')">1</button>
+      <button class="calculator__key" onclick="set('2')">2</button>
+      <button class="calculator__key" onclick="set('3')">3</button>
+      <button class="calculator__key" onclick="set('-')">-</button>
+      <button class="calculator__key" onclick="set('.')">.</button>
+      <button class="calculator__key" onclick="set('0')">0</button>
+      <button class="calculator__key" onclick="set('/')">/</button>
+      <button class="calculator__key" onclick="set('*')">x</button>
+      <button class="calculator__key erase big" type="reset" onclick="clean()">RESET</button>
+      <button class="calculator__key send big" type="submit" onclick="calc()">=</button>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="attribution__link" target="_blank" href="https://github.com/nickingnova">nickingnova</a>.
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
