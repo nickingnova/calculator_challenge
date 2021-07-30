@@ -94,7 +94,6 @@ function calc(){
 					}
 					break;
 				case "+":
-					console.log(`${arrayBefore} + ${arrayAfter}`)
 					result = arrayBefore + arrayAfter;
 					clean()
 					if (result % 1 == 0) {
